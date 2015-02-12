@@ -5,16 +5,6 @@
 	<link rel="stylesheet" type="text/css" href="css/index.css" />
 	<script type="text/javascript" src="js/jquery.js"></script>
 	<script type="text/javascript" src="js/game_manager.js"></script>
-	<script src="/socket.io/socket.io.js"></script>
-	<script type="text/javascript">
-	var s = io.connect(); //リモート接続
-	//サーバから受け取るイベント
-	s.on("connect", function () {});  // 接続時
-	s.on("disconnect", function (client) {});  // 切断時
-	s.on("S_to_C_message", function (data) {
-		var data_val = data.value;
-	});
-	</script>
 </head>
 <body class="bk_style">
 	
