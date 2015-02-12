@@ -1,0 +1,118 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" type="text/css" href="css/index.css" />
+	<script type="text/javascript" src="js/jquery.js"></script>
+	<script type="text/javascript" src="js/game_manager.js"></script>
+	<script src="/socket.io/socket.io.js"></script>
+	<script type="text/javascript">
+	var s = io.connect(); //リモート接続
+	//サーバから受け取るイベント
+	s.on("connect", function () {});  // 接続時
+	s.on("disconnect", function (client) {});  // 切断時
+	s.on("S_to_C_message", function (data) {
+		var data_val = data.value;
+	});
+	</script>
+</head>
+<body class="bk_style">
+	
+<div id="container">
+
+    <div class="grid-container">
+	    <div class="grid-row">
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	    </div>
+	    <div class="grid-row">
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	    </div>
+	    <div class="grid-row">
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	    </div>
+	    <div class="grid-row">
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	    </div>
+	    <div class="grid-row">
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	    </div>
+	    <div class="grid-row">
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	    </div>
+	    <div class="grid-row">
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	    </div>
+	    <div class="grid-row">
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	      <div class="grid-cell"></div>
+	    </div>
+    </div>
+
+	<div id="div-gameinfo">
+		<h3>Your Infomation</h3>
+		<h4>Name:<span id="yi-name">user name</span></h4>
+		<h4>Time:<span id="yi-current-time">0.0</span></h4>
+		<h4>TotalClick:<span id="yi-total-click">0</span></h4>
+		<h4>CurrentClickCell:<span id="yi-current-click-cell">0</span></h4>
+		<h4>NextClickCell:<span id="yi-next-click-cell">1</span></h4>
+	</div>
+
+</div>
+
+</body>
+</html>

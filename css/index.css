@@ -1,0 +1,95 @@
+@charset "utf-8";
+
+@font-face {
+	font-family: "nicomoji";
+	src: url("../fonts/nicomoji.ttf") format("truetype");
+}
+
+*{
+	margin:0px;
+	padding:0px;
+}
+
+html,body{
+	width:100%;
+	font-family: "nicomoji", Arial, sans-serif;
+}
+
+#container{
+	padding-top:30px;
+	width:850px;
+	margin:0 auto;
+}
+
+/*---- グリッド ----*/
+.grid-container {
+	float:left;
+	width:565px;
+	z-index: 1;
+}
+
+.grid-row {
+	margin-bottom: 5px;
+}
+.grid-row:last-child{
+    margin-bottom: 0;
+}
+.grid-row:after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.grid-cell {
+	width: 66.25px;
+	height: 66.25px;
+	margin-right: 5px;
+	float: left;
+	border-radius: 3px;
+	background: rgba(238, 228, 218, 0.35);
+	text-align: center;
+	position: relative;
+	top: 0;
+	left: 0;
+}
+.grid-cell:last-child{
+    margin-right: 0;
+}
+.g-state-normal{
+	background: rgba(20, 20, 20, 0.35);
+}
+.g-state-myclick{
+	background: rgba(180, 20, 20, 0.35);
+}
+.g-state-clicked{
+	background: rgba(20, 20, 180, 0.35);
+}
+
+.g-number-text{
+	position: absolute;
+	top: -26px;
+	left: -20px;
+	right: 0;
+	bottom: 0;
+	margin: auto;
+	width: 5px;
+	height: 5px;
+	font-size: 30px;
+}
+
+
+
+/*---- ゲーム情報画面 ----*/
+#div-gameinfo{
+	float:left;
+	width:270px;
+	margin-left:15px;
+}
+
+#div-gameinfo h3{
+	text-align:center;
+	font-size: 30px;
+}
+
+
+
