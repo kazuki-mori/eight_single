@@ -1,0 +1,17 @@
+{
+  "name": "eight_single",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "dependencies": {
+    "body-parser": "^1.10.2",
+    "express": "^4.9.8",
+    "mongodb": "^1.4.29",
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
