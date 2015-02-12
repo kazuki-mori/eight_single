@@ -63,6 +63,6 @@ app.get(/^\/(?:css|js|img|fonts)\/.+/, function(req, res) {
 });
 
 server = http.createServer(app);
-server.listen(process.env.PORT || 3000, function(){});
+server.listen(process.env.PORT || 8080, function(){});
 
 //app.listen(3000);
